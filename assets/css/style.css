@@ -1,0 +1,503 @@
+* {
+  margin: 0;
+}
+body {
+  padding: 50px;
+}
+/* HEADER */
+header {
+  height: 3vh;
+  width: 85vw;
+  padding: 70px;
+  background-color: transparent;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  font-family: arial;
+  font-size: 20px;
+  margin-left: 70px;
+  z-index: 1999;
+  position: fixed;
+  top: 3;
+  left: 0;
+  right: 0;
+}
+header .logo {
+  background-image: url(../images/my-logo.png);
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+}
+header h1 {
+  font-size: 22px;
+  margin-top: 50px;
+}
+header h1 span {
+  color: rgb(255, 20, 114);
+}
+header .nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav a {
+  text-decoration: none;
+  color: white;
+}
+header .nav a:hover {
+  color: rgb(255, 20, 114);
+}
+header .nav a.active {
+  color: rgb(255, 20, 114);
+}
+header button {
+  background-color: transparent;
+  height: 40px;
+  width: 120px;
+  border: solid 2px rgb(255, 20, 114);
+  color: rgb(255, 20, 114);
+  font-size: 20px;
+  font-family: arial;
+  border-radius: 25px;
+  text-transform: capitalize;
+}
+header button:hover {
+  background-color: rgb(255, 20, 114);
+  color: white;
+}
+/* HERO  */
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  padding: 50px;
+  /* background-color: black; */
+  background: linear-gradient(
+    45deg,
+    #f06,
+    black,
+    rgb(2, 2, 29),
+    black,
+    rgb(2, 2, 29),
+    black,
+    rgb(2, 2, 29)
+  );
+  color: rgb(242, 237, 240);
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero .hero-img {
+  background-image: url(../images/portfolio-hero.png);
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+  margin-left: 50px;
+}
+.hero .hero-img-hover {
+  position: absolute;
+  top: 5;
+  left: 150px;
+  width: 500px;
+  height: 65%;
+  background: transparent;
+  transition: 4s;
+}
+.hero .hero-img-hover:hover {
+  background: linear-gradient(
+    45deg,
+    #f06,
+    black,
+    rgb(2, 2, 29),
+    black,
+    rgb(2, 2, 29),
+    black,
+    rgb(2, 2, 29)
+  );
+  opacity: 0.8;
+}
+.hero .hero-content h6 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 1cm;
+  font-weight: 100;
+}
+.hero .hero-content h1 {
+  font-size: 50px;
+  letter-spacing: 2.5px;
+  line-height: 1.5cm;
+  text-transform: capitalize;
+  width: 70%;
+  text-align-last: center;
+  margin-bottom: 10px;
+}
+.hero .hero-content h1 span {
+  color: rgb(255, 20, 114);
+}
+.hero .hero-content h5 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 1cm;
+  font-weight: 100;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.hero .hero-content button {
+  margin-top: 10px;
+  border: solid 1px rgb(255, 20, 114);
+  border-radius: 20px;
+  height: 50px;
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  font-size: 18px;
+}
+
+/* <!-- ABOUT --> */
+.about-me {
+  height: 85vh;
+  width: 100vw;
+  padding: 70px;
+  background: linear-gradient(
+    45deg,
+    black,
+    rgb(2, 2, 29),
+    black,
+    rgb(2, 2, 29),
+    black,
+    rgb(2, 2, 29)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-me .about-info {
+  width: 50%;
+  margin-left: 50px;
+}
+.about-me .about-info h1 {
+  font-size: 70px;
+  text-transform: capitalize;
+  font-family: system-ui;
+  letter-spacing: 3px;
+  line-height: 1.5cm;
+  color: white;
+}
+
+.about-me .about-info h5 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 1cm;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-family: arial;
+  font-weight: 600;
+  color: white;
+}
+.about-me .about-info h5 span {
+  color: rgb(255, 20, 114);
+}
+.about-me .about-info p {
+  width: 80%;
+  color: rgb(242, 211, 221);
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-family: sans-serif;
+  line-height: 0.7cm;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.about-me .about-info p span {
+  color: #f06;
+  font-size: 25px;
+}
+.about-me .about-info button {
+  background-color: transparent;
+  height: 50px;
+  width: 180px;
+  background: linear-gradient(45deg, #f06, #3cf, rgb(255, 20, 114));
+  border: solid 2px rgb(255, 20, 114);
+  color: white;
+  font-size: 20px;
+  font-family: arial;
+  border-radius: 25px;
+  text-transform: capitalize;
+}
+
+.about-me .about-img {
+  background-image: url(../images/cropped-fridahhero1.jpg);
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+  margin-right: 100px;
+}
+
+/* <!-- SKILLS --> */
+.skills {
+  background: linear-gradient(
+    45deg,
+    #f06,
+    black,
+    rgb(2, 2, 29),
+    black,
+    rgb(2, 2, 29),
+    black,
+    rgb(2, 2, 29),
+    #f06
+  );
+  height: 80vh;
+  width: 100vw;
+  padding: 70px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skills .heading {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills .heading h1 {
+  font-size: 70px;
+  text-transform: capitalize;
+  font-family: system-ui;
+  letter-spacing: 4px;
+  line-height: 1.5cm;
+  color: white;
+}
+.skills .heading .i {
+  color: #f06;
+  font-size: 200px;
+}
+.skills .skillsets {
+  width: 40%;
+}
+.skills .skillsets .skillset {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skills .skillsets .skillset h6 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 1cm;
+  font-weight: 100;
+  text-transform: capitalize;
+  margin-top: 40px;
+  font-family: arial;
+}
+.skills .skillsets .skillset p {
+  font-size: 100px;
+  line-height: 2cm;
+  letter-spacing: 1.5px;
+  font-weight: 100;
+  color: #f06;
+}
+.skills .skillsets .skillset p span {
+  color: rgba(51, 26, 36, 0.782);
+}
+
+/* <!-- SERVICES --> */
+/* <!-- CONTACT --> */
+.contact {
+  height: 160vh;
+  width: 100vw;
+  padding: 70px;
+  background: linear-gradient(
+    45deg,
+    #f06,
+    black,
+    rgb(2, 2, 29),
+    black,
+    rgb(2, 2, 29),
+    black,
+    rgb(2, 2, 29)
+  );
+  color: white;
+}
+.contact .contact-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transform-style: preserve-3d;
+}
+.contact .contact-info .earth {
+  background-image: url(../images/earth.jpeg);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-x;
+  margin-top: 40px;
+
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 1), 0 0 50px #4069ff;
+  animation: animateEarth 15s linear infinite;
+}
+@keyframes animateEarth {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -750px 0;
+  }
+}
+.contact .contact-info .circle {
+  font-family: cursive;
+  margin-top: 30px;
+  margin-left: 50px;
+  color: #f06;
+}
+.contact .contact-info .contact-me {
+  margin-right: 50px;
+}
+.contact .contact-info .contact-me h1 {
+  font-size: 70px;
+  text-transform: capitalize;
+  font-family: system-ui;
+  letter-spacing: 4px;
+  line-height: 1.5cm;
+  color: rgb(235, 220, 220);
+}
+.contact .contact-info .contact-me .form {
+  display: flex;
+  flex-direction: column;
+  /* width: 60%; */
+}
+.contact .contact-info .contact-me .form label {
+  font-size: 25px;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  font-family: arial;
+}
+.contact .contact-info .contact-me .form label span {
+  color: #f06;
+  font-size: 15px;
+}
+.contact .contact-info .contact-me .form .input {
+  height: 30px;
+  width: 300px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(255, 0, 102, 0.222);
+  padding-left: 20px;
+}
+.contact .contact-info .contact-me .form #message {
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(255, 0, 102, 0.222);
+  padding-top: 20px;
+  color: gray;
+}
+.contact .follow-me {
+  margin-top: 100px;
+  margin-bottom: 70px;
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact .follow-me h1 {
+  font-size: 70px;
+  text-transform: capitalize;
+  font-family: system-ui;
+  letter-spacing: 4px;
+  line-height: 1.5cm;
+  color: rgb(235, 220, 220);
+}
+.contact .follow-me p {
+  font-size: 100px;
+  line-height: 2cm;
+  letter-spacing: 1.5px;
+  font-weight: 100;
+  color: #f06;
+}
+.contact .follow-me p span {
+  color: rgba(51, 26, 36, 0.782);
+}
+.contact .follow-me .icons {
+  display: flex;
+  width: 40%;
+}
+.contact .follow-me .icons .i {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgb(255, 20, 114);
+  color: rgb(2, 2, 29);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.contact .follow-me .icons .i i {
+  font-size: xx-large;
+}
+.line {
+  color: #f06;
+  margin-top: -40vh;
+  margin-left: 50px;
+}
+/* <!-- FOOTER --> */
+footer {
+  margin-top: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+footer h1 {
+  font-size: 30px;
+  text-transform: capitalize;
+  font-family: cursive;
+  letter-spacing: 1.5px;
+  line-height: 1.5cm;
+}
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  text-transform: capitalize;
+  margin-right: 50px;
+  font-family: arial;
+}
+footer ul li {
+  margin-left: 20px;
+}
+/*  back to the top */
+.top {
+  margin-left: 40vw;
+  text-decoration: none;
+  height: fit-content;
+  width: fit-content;
+  font-family: arial;
+  font-size: 25px;
+  letter-spacing: 2px;
+  line-height: 2cm;
+  padding: 5px;
+  background: linear-gradient(45deg, #f06, #3cf, rgb(255, 20, 114));
+  border: solid 2px rgb(255, 20, 114);
+  color: white;
+  border-radius: 25px;
+  text-transform: capitalize;
+}
