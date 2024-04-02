@@ -75,8 +75,7 @@ header button:hover {
   position: relative;
   height: 100vh;
   width: 100vw;
-  padding: 50px;
-  /* background-color: black; */
+  padding: 70px;
   background: linear-gradient(
     45deg,
     #f06,
@@ -166,8 +165,8 @@ header button:hover {
 
 /* <!-- ABOUT --> */
 .about-me {
-  height: 85vh;
-  width: 100vw;
+  height: auto;
+  width: 100%;
   padding: 70px;
   background: linear-gradient(
     45deg,
@@ -260,8 +259,8 @@ header button:hover {
     rgb(2, 2, 29),
     #f06
   );
-  height: 80vh;
-  width: 100vw;
+  height: auto;
+  width: 100%;
   padding: 70px;
   color: white;
   display: flex;
@@ -318,8 +317,8 @@ header button:hover {
 /* <!-- SERVICES --> */
 /* <!-- CONTACT --> */
 .contact {
-  height: 160vh;
-  width: 100vw;
+  height: auto;
+  width: 100%;
   padding: 70px;
   background: linear-gradient(
     45deg,
@@ -410,7 +409,7 @@ header button:hover {
 }
 .contact .follow-me {
   margin-top: 100px;
-  margin-bottom: 70px;
+  margin-bottom: 100px;
   margin-left: 50px;
   display: flex;
   justify-content: space-around;
@@ -447,23 +446,32 @@ header button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 40px;
 }
 .contact .follow-me .icons .i i {
   font-size: xx-large;
 }
-.line {
-  color: #f06;
-  margin-top: -40vh;
-  margin-left: 50px;
-}
+
 /* <!-- FOOTER --> */
 footer {
-  margin-top: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
   color: white;
+  height: auto;
+  width: 100%;
+  padding: 70px;
+  background: linear-gradient(
+    45deg,
+    #f06,
+    black,
+    rgb(2, 2, 29),
+    black,
+    rgb(2, 2, 29),
+    black,
+    rgb(2, 2, 29),
+    #f06
+  );
 }
 footer h1 {
   font-size: 30px;
@@ -471,6 +479,7 @@ footer h1 {
   font-family: cursive;
   letter-spacing: 1.5px;
   line-height: 1.5cm;
+  margin-bottom: 50px;
 }
 footer ul {
   display: flex;
@@ -479,6 +488,7 @@ footer ul {
   list-style-type: none;
   text-transform: capitalize;
   margin-right: 50px;
+  margin-bottom: 50px;
   font-family: arial;
 }
 footer ul li {
@@ -500,4 +510,64 @@ footer ul li {
   color: white;
   border-radius: 25px;
   text-transform: capitalize;
+}
+@media (max-width: 950px) {
+  header {
+    height: auto;
+    width: 100%;
+    padding: 70px;
+    position: unset;
+    background: linear-gradient(
+      45deg,
+      #f06,
+      black,
+      rgb(2, 2, 29),
+      black,
+      rgb(2, 2, 29),
+      black,
+      rgb(2, 2, 29)
+    );
+  }
+  .nav {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .hero-img {
+    width: 300px;
+    height: 300px;
+  }
+  .about-me {
+    flex-direction: column;
+    width: 100%;
+  }
+  .about-info {
+    margin-bottom: 50px;
+  }
+  .about-img {
+    width: 200px;
+    height: 200px;
+  }
+  p {
+    width: 90vw;
+  }
+  .contact-info {
+    flex-direction: column;
+  }
+  .follow-me {
+    flex-direction: column;
+  }
+  .icons {
+    margin-bottom: 40px;
+  }
+  footer {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  h1 {
+    font-size: 15px;
+    font-weight: 800;
+  }
 }
