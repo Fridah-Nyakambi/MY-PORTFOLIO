@@ -1,15 +1,21 @@
 * {
   margin: 0;
 }
-body {
-  padding: 50px;
-}
+
 /* HEADER */
 header {
-  height: 3vh;
+  height: 2vh;
   width: 85vw;
   padding: 70px;
-  background-color: transparent;
+  background: linear-gradient(
+    45deg,
+    black,
+    rgb(2, 2, 29),
+    black,
+    rgb(2, 2, 29),
+    black,
+    rgb(2, 2, 29)
+  );
   color: white;
   display: flex;
   justify-content: space-between;
@@ -55,8 +61,11 @@ header .nav a:hover {
 header .nav a.active {
   color: rgb(255, 20, 114);
 }
-header button {
+header .header-btn {
   background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 40px;
   width: 120px;
   border: solid 2px rgb(255, 20, 114);
@@ -66,7 +75,10 @@ header button {
   border-radius: 25px;
   text-transform: capitalize;
 }
-header button:hover {
+a:link {
+  text-decoration: none;
+}
+header .header-btn:hover {
   background-color: rgb(255, 20, 114);
   color: white;
 }
@@ -150,9 +162,11 @@ header button:hover {
   text-transform: capitalize;
   margin-bottom: 10px;
 }
-.hero .hero-content button {
+.hero .hero-content .hero-btn {
   margin-top: 10px;
   border: solid 1px rgb(255, 20, 114);
+  background-color: white;
+  color: #f06;
   border-radius: 20px;
   height: 50px;
   width: 180px;
@@ -161,6 +175,13 @@ header button:hover {
   align-items: center;
   padding-left: 30px;
   font-size: 18px;
+}
+.hero-btn a {
+  text-decoration: none;
+}
+.hero .hero-content .hero-btn:hover {
+  background-color: rgb(255, 20, 114);
+  color: white;
 }
 
 /* <!-- ABOUT --> */
@@ -380,7 +401,6 @@ header button:hover {
 .contact .contact-info .contact-me .form {
   display: flex;
   flex-direction: column;
-  /* width: 60%; */
 }
 .contact .contact-info .contact-me .form label {
   font-size: 25px;
@@ -511,6 +531,7 @@ footer ul li {
   border-radius: 25px;
   text-transform: capitalize;
 }
+/* MEDIA QUERRY */
 @media (max-width: 950px) {
   header {
     height: auto;
