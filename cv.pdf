@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="icon" href="assets/images/my-logo.png" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div>
+        <h1>fridah<span>Maangi</span></h1>
+        <div class="logo"></div>
+      </div>
+      <div class="nav">
+        <a href="#hero" class="active">home</a>
+        <a href="#about">about me</a>
+        <a href="#skills">skills</a>
+        <a href="#services">services</a>
+        <a href="#contact">contact</a>
+      </div>
+      <a href="mailto:fridahmaangi@mail.com">
+        <div class="header-btn">Let's Talk</div>
+      </a>
+    </header>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-img"></div>
+      <div class="hero-content">
+        <h6>Hello, it's Me</h6>
+        <h1>fridah <span>nyakambi</span> maangi</h1>
+        <h5>a front-end developer</h5>
+        <a class="hero-btn" href="./assets/images/cv.pdf" download
+          >Download CV</a
+        >
+      </div>
+      <span class="hero-img-hover"></span>
+    </section>
+    <!-- ABOUT -->
+    <section id="about" class="about-me">
+      <div class="about-info">
+        <h1>about me</h1>
+        <h5>developer <span>& designer.</span></h5>
+        <p>
+          Hello World
+          <span>!i!</span>Welcome to my portfolio! I'm a passionate front-end
+          developer dedicated to crafting immersive and user-centric web
+          experiences. With a keen eye for design and a love for clean,
+          efficient code, I specialize in turning creative concepts into
+          functional, responsive websites. My journey in web development began
+          with a curiosity for blending aesthetics with technology. Whether it's
+          designing intuitive user interfaces or optimizing performance for
+          seamless user interactions, I thrive on the challenge of bringing
+          visions to life through code.
+        </p>
+
+        <p>
+          Collaboration is at the heart of my process. I enjoy working closely
+          with designers, stakeholders, and fellow developers to transform ideas
+          into reality. By staying up-to-date with the latest industry trends
+          and best practices, I strive to deliver solutions that not only meet
+          but exceed expectations.
+        </p>
+
+        <p>
+          Thank you for visiting my portfolio. I'm excited to share my work with
+          you and discuss how we can collaborate to create memorable digital
+          experiences. Let's connect and bring your ideas to life
+          <span>!!!</span>
+        </p>
+
+        <button>let's talk</button>
+      </div>
+
+      <div><div class="about-img"></div></div>
+    </section>
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+      <div class="heading">
+        <h1>my skills</h1>
+        <p class="i"><i class="bi bi-arrow-left"></i></p>
+      </div>
+      <div class="skillsets">
+        <div class="skillset">
+          <h6>html</h6>
+          <p>.........<span>....</span></p>
+        </div>
+        <div class="skillset">
+          <h6>css</h6>
+          <p>.........<span>...</span></p>
+        </div>
+        <div class="skillset">
+          <h6>javascript</h6>
+          <p>......<span>......</span></p>
+        </div>
+        <div class="skillset">
+          <h6>wordpress</h6>
+          <p>...<span>........</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="contact-info">
+        <div>
+          <div class="earth"></div>
+          <div class="circle">Let's Talk-Code With Fridah</div>
+        </div>
+        <div class="contact-me">
+          <h1>contact me</h1>
+          <form class="form" action="">
+            <label for="First Name">First Name<span>*</span></label>
+            <input
+              class="input"
+              type="text"
+              placeholder="Enter your first name"
+            />
+            <label for="Last name">Last name<span>*</span></label>
+            <input
+              class="input"
+              type="text"
+              placeholder="Enter your last name"
+            />
+
+            <label for="Email">Email<span>*</span></label>
+            <input
+              class="input"
+              type="text"
+              placeholder="Enter your email....eg. example@gmail.com"
+            />
+            <label for="Message">Message<span>*</span></label>
+            <textarea name="message" id="message" cols="30" rows="10">
+             write your message here</textarea
+            >
+          </form>
+        </div>
+      </div>
+      <div class="follow-me">
+        <div>
+          <h1>follow me</h1>
+          <p>.........<span>........</span></p>
+        </div>
+        <div class="icons">
+          <div>
+            <div class="i">
+              <i class="bi bi-github"></i>
+            </div>
+            <div class="i">
+              <i class="bi bi-twitter"></i>
+            </div>
+            <div class="i">
+              <i class="bi bi-instagram"></i>
+            </div>
+          </div>
+          <div>
+            <div class="i">
+              <i class="bi bi-facebook"></i>
+            </div>
+            <div class="i">
+              <i class="bi bi-youtube"></i>
+            </div>
+            <div class="i">
+              <i class="bi bi-telegram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="line" />
+    <!-- FOOTER -->
+
+    <footer>
+      <div>
+        <h1>fridah nyakambi maangi</h1>
+        <div class="logo"></div>
+      </div>
+      <div>
+        <ul>
+          <li><a href="#home"></a>home</li>
+          <li><a href="#about"></a> about me</li>
+          <li><a href="#skills"></a>skills</li>
+          <li><a href="#services"></a> services</li>
+          <li><a href="#contact"></a>contact</li>
+        </ul>
+      </div>
+    </footer>
+    <a href="#top" class="top">back to the top</a>
+  </body>
+</html>
