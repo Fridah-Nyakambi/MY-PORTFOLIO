@@ -104,8 +104,8 @@ header .header-btn:hover {
 }
 .hero .hero-img {
   background-image: url(../images/portfolio-hero.png);
-  width: 500px;
-  height: 500px;
+  width: 30vw;
+  height: 50vh;
   border-radius: 50%;
   object-fit: contain;
   background-position: center;
@@ -256,8 +256,8 @@ header .header-btn:hover {
 
 .about-me .about-img {
   background-image: url(../images/cropped-fridahhero1.jpg);
-  width: 500px;
-  height: 500px;
+  width: 30vw;
+  height: 50vh;
   border-radius: 50%;
   object-fit: contain;
   background-position: center;
@@ -453,7 +453,10 @@ header .header-btn:hover {
 }
 .contact .follow-me .icons {
   display: flex;
-  width: 40%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 30%;
 }
 .contact .follow-me .icons .i {
   height: 50px;
